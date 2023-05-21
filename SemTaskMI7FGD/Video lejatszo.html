@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Videó lejátszása</title>
+    <style>
+        
+        </style>
+</head>
+<body style="background:transparent; color:white; font-size:10pt; font-family:tahoma ">
+   
+    <font style="font-size:14pt" ><b>Video Lejátszó</b></font>
+    <br><br>
+    
+
+    
+    <video  id="videom" width="640" controls>
+        <source src="kepek/Video.mp4" type="video/mp4"  >
+        A böngésződ nem támogatja a HTML videók lejátszását. </video>
+        <br /><br />
+        <button style="background-color:green; font-weight: bold; font-size: medium;" onClick="videom.play()">Indítás</button>
+    <button style="background-color: red; font-weight: bold; font-size: medium;" onClick="videom.pause()">Leállítás</button>
+    &nbsp;&nbsp;&nbsp;
+    
+    <br /><br />
+    <button style="background-color:aqua; font-weight: bold;" onClick="videom.volume=0">Néma</button>
+    <button style="background-color:aqua; font-weight: bold;" onClick="videom.volume=0.2">Halk</button>
+    <button style="background-color:aqua; font-weight: bold;" onClick="videom.volume=1">Hangos</button>
+        <br>
+        <b>Forrás: https://www.youtube.com/watch?v=heTIZZ6ZtLw</b>
+    </body>
+</html>
+
+
+
+
+
+
