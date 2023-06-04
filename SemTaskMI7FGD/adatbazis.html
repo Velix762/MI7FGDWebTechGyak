@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Weblap készítése</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body style="background: transparent; color: white; font-family: tahoma; font-size: 15pt;  ">
+  <br>
+  <table  >
+    <tr style="background-color: transparent;" >
+        <td>
+        <form action="" onsubmit="return validacio()" id="form">
+            <label for="nev">Név:<span>*kötelező</span></label><br>
+            <input type="text" name="nev" required><br>
+          
+            <label for="kor">Kor:<span>*kötelező</span></label><br>
+            <input type="number" name="kor"><br>
+          
+            <label for="jelszo">Jelszó:<span>*kötelező</span></label><br>
+            <input type="password" name="jelszo"><br>
+          
+            <label for="date">Date:</label><br>
+            <input type="date" name="date"><br>
+            
+            <label for="time">Time:</label><br>
+            <input type="time" name="time"><br>
+            <br>
+            <input type="radio" name="Neme" id="Férfi"
+                     value="Férfi" checked><label for="html">Férfi</label><br>
+           
+            <input type="radio" name="neme" id="Nő"
+                     value="Nő"/><label for="css">Nő</label><br>
+            <br>
+            <span>Kedvenc állat</span>
+            <br>
+            <input type="checkbox" name="allat" checked><label for="Kutya" value="Kutya">Kutya</label><br>
+            <input type="checkbox" name="allat" ><label for="Macska" value="Macska" >Macska</label> 
+            
+            
+            <script>
+                function show() {
+                  
+                    let image = document.getElementById("allatKep");
+                    image.src ="kepek/smiling cat.gif"
+                    document.getElementById("image")
+                        .style.alignSelf = "center" ;
+                        
+                }
+            </script>
+            <br>
+            <br>
+            <input type="submit" value="Küldés" onclick="show()" id="btnID">
+          </form>
+          </td >
+          <td style="width: auto; text-align: center;background-color: transparent; ">
+            <img id="allatKep" style="align-items: center;" src="" itemid="image"/>
+          </td>
+        </tr>
+    </table>
+</body>
+</html>
